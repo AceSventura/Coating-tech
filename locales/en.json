@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "technologies": "Technologies",
+    "contact": "Contact",
+    "quote": "Quote",
+    "products": "Products"
+  },
+  "about": {
+    "title": "About Us",
+    "experience": {
+        "title": "Experience",
+        "description": "We are a young company, but we rely on the decades-long experience of consultants who have worked in the industry their entire lives."
+    },
+    "technology": {
+        "title": "Technology",
+        "description": "Coatings designed and manufactured using only certified raw materials to ensure performance and reliability."
+    }
+  },
+  "hero": {
+    "title": "Advanced Coating Solutions",
+    "subtitle": "Specialists in the production of coated anodic and cathodic electrodes",
+    "cta": "Contact Us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "intro": "Fill out the form below to receive a personalized quote for our coating services.",
+    "form": {
+      "name": "Full Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Requested Service",
+      "details": "Project Details",
+      "submit": "Request Quote"
+    },
+    "success": "Your request has been successfully sent. We will contact you soon.",
+    "success": {
+      "title": "Request Sent Successfully!",
+      "message": "Thank you for requesting a quote. We have received your request and will contact you soon to discuss the details of your project.",
+      "back": "Back to Home"
+    }
+  },
+  "footer": {
+    "description": "Advanced coating solutions for anodes and cathodes",
+    "quickLinks": "Quick Links",
+    "follow": "Follow Us",
+    "copyright": "© 2025 Coating Tech. All rights reserved."
+  },
+  "language": {
+    "it": "Italian",
+    "en": "English",
+    "es": "Spanish"
+  }
+}

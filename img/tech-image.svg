@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="300" r="250" fill="#e9ecef" />
+  <circle cx="400" cy="300" r="200" fill="#dee2e6" />
+  
+  <!-- Coating Layers Representation -->
+  <g transform="translate(400, 300)">
+    <!-- Base Layer -->
+    <path d="M-150,-50 L150,-50 L150,50 L-150,50 Z" fill="#6c757d" />
+    
+    <!-- Coating Layers -->
+    <path d="M-150,-60 L150,-60 L150,-50 L-150,-50 Z" fill="#0056b3" />
+    <path d="M-150,-70 L150,-70 L150,-60 L-150,-60 Z" fill="#004494" />
+    <path d="M-150,-80 L150,-80 L150,-70 L-150,-70 Z" fill="#00a8e8" />
+    
+    <!-- Cathode Representation -->
+    <rect x="-120" y="-40" width="90" height="80" fill="#495057" rx="5" ry="5" />
+    <rect x="-110" y="-30" width="70" height="60" fill="#343a40" rx="3" ry="3" />
+    
+    <!-- Anode Representation -->
+    <rect x="30" y="-40" width="90" height="80" fill="#495057" rx="5" ry="5" />
+    <rect x="40" y="-30" width="70" height="60" fill="#343a40" rx="3" ry="3" />
+    
+    <!-- Connection Lines -->
+    <line x1="-75" y1="-80" x2="-75" y2="-120" stroke="#6c757d" stroke-width="3" />
+    <line x1="75" y1="-80" x2="75" y2="-120" stroke="#6c757d" stroke-width="3" />
+    
+    <!-- Electrons Representation -->
+    <g>
+      <circle cx="-100" cy="-100" r="5" fill="#00a8e8" />
+      <circle cx="-80" cy="-110" r="5" fill="#00a8e8" />
+      <circle cx="-60" cy="-105" r="5" fill="#00a8e8" />
+      <circle cx="60" cy="-100" r="5" fill="#00a8e8" />
+      <circle cx="80" cy="-110" r="5" fill="#00a8e8" />
+      <circle cx="100" cy="-105" r="5" fill="#00a8e8" />
+    </g>
+    
+    <!-- Coating Process Arrows -->
+    <g transform="translate(0, 100)">
+      <path d="M-120,0 L-80,0 L-100,20 Z" fill="#0056b3" />
+      <path d="M-40,0 L0,0 L-20,20 Z" fill="#0056b3" />
+      <path d="M40,0 L80,0 L60,20 Z" fill="#0056b3" />
+    </g>
+  </g>
+  
+  <!-- Decorative Molecules -->
+  <g>
+    <!-- Molecule 1 -->
+    <circle cx="100" cy="100" r="8" fill="#0056b3" />
+    <circle cx="120" cy="80" r="8" fill="#0056b3" />
+    <circle cx="140" cy="100" r="8" fill="#0056b3" />
+    <line x1="108" y1="100" x2="132" y2="100" stroke="#0056b3" stroke-width="2" />
+    <line x1="120" y1="88" x2="120" y2="100" stroke="#0056b3" stroke-width="2" />
+    
+    <!-- Molecule 2 -->
+    <circle cx="650" cy="150" r="8" fill="#0056b3" />
+    <circle cx="670" cy="130" r="8" fill="#0056b3" />
+    <circle cx="690" cy="150" r="8" fill="#0056b3" />
+    <line x1="658" y1="150" x2="682" y2="150" stroke="#0056b3" stroke-width="2" />
+    <line x1="670" y1="138" x2="670" y2="150" stroke="#0056b3" stroke-width="2" />
+    
+    <!-- Molecule 3 -->
+    <circle cx="150" cy="500" r="8" fill="#0056b3" />
+    <circle cx="170" cy="480" r="8" fill="#0056b3" />
+    <circle cx="190" cy="500" r="8" fill="#0056b3" />
+    <line x1="158" y1="500" x2="182" y2="500" stroke="#0056b3" stroke-width="2" />
+    <line x1="170" y1="488" x2="170" y2="500" stroke="#0056b3" stroke-width="2" />
+    
+    <!-- Molecule 4 -->
+    <circle cx="650" cy="450" r="8" fill="#0056b3" />
+    <circle cx="670" cy="430" r="8" fill="#0056b3" />
+    <circle cx="690" cy="450" r="8" fill="#0056b3" />
+    <line x1="658" y1="450" x2="682" y2="450" stroke="#0056b3" stroke-width="2" />
+    <line x1="670" y1="438" x2="670" y2="450" stroke="#0056b3" stroke-width="2" />
+  </g>
+  
+  <!-- Text Labels -->
+  <g font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
+    <text x="400" y="50" font-size="24" fill="#0056b3">Advanced Coating Technology</text>
+    <text x="400" y="550" font-size="18" fill="#0056b3">High Performance Materials</text>
+    <text x="200" y="300" font-size="16" fill="#343a40">Cathode</text>
+    <text x="600" y="300" font-size="16" fill="#343a40">Anode</text>
+  </g>
+</svg>

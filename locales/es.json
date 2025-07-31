@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "technologies": "Tecnologías",
+    "contact": "Contacto",
+    "quote": "Presupuesto",
+    "products": "Productos"
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "experience": {
+        "title": "Experiencia",
+        "description": "Somos una empresa joven, pero contamos con la experiencia de décadas de consultores que han trabajado toda su vida en el sector."
+    },
+    "technology": {
+        "title": "Tecnología",
+        "description": "Revestimientos diseñados y fabricados utilizando solo materias primas certificadas, para garantizar rendimiento y fiabilidad."
+    }
+  },  
+  "hero": {
+    "title": "Soluciones Avanzadas de Recubrimiento",
+    "subtitle": "Especialistas en la producción de electrodos anódicos y catódicos recubiertos",
+    "cta": "Contáctanos"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "quote": {
+    "title": "Solicitar un Presupuesto",
+    "intro": "Complete el formulario a continuación para recibir un presupuesto personalizado para nuestros servicios de recubrimiento.",
+    "form": {
+      "name": "Nombre Completo",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "service": "Servicio Solicitado",
+      "details": "Detalles del Proyecto",
+      "submit": "Solicitar Presupuesto"
+    },
+    "success": "Su solicitud ha sido enviada con éxito. Nos pondremos en contacto con usted pronto.",
+    "success": {
+      "title": "¡Solicitud Enviada con Éxito!",
+      "message": "Gracias por solicitar un presupuesto. Hemos recibido su solicitud y nos pondremos en contacto con usted pronto para discutir los detalles de su proyecto.",
+      "back": "Volver al Inicio"
+    }
+  },
+  "footer": {
+    "description": "Soluciones avanzadas de recubrimiento para ánodos y cátodos",
+    "quickLinks": "Enlaces Rápidos",
+    "follow": "Síguenos",
+    "copyright": "© 2025 Coating Tech. Todos los derechos reservados."
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

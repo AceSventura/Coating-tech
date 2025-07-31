@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "technologies": "Tecnologie",
+    "contact": "Contatti",
+    "quote": "Richiedi preventivo",
+    "products": "Prodotti"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "experience": {
+        "title": "Esperienza",
+        "description": "Siamo un'azienda giovane, ma ci avvaliamo dell'esperienza pluridecennale di consulenti che operano da una vita nel settore."
+    },
+    "technology": {
+        "title": "Tecnologia",
+        "description": "Rivestimenti progettati e realizzati utilizzando solo materie prime certificate, per garantire performance e affidabilità."
+    }
+  },
+  "hero": {
+    "title": "Soluzioni Avanzate di Coating",
+    "subtitle": "Specialisti nella produzione di elettrodi anodici e catodici rivestiti",
+    "cta": "Contattaci"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Oggetto",
+      "message": "Messaggio",
+      "submit": "Invia Messaggio"
+    }
+  },
+  "quote": {
+    "title": "Richiedi un Preventivo",
+    "intro": "Compila il modulo sottostante per ricevere un preventivo personalizzato per i nostri servizi di coating.",
+    "form": {
+      "name": "Nome e Cognome",
+      "company": "Azienda",
+      "email": "Email",
+      "phone": "Telefono",
+      "service": "Servizio Richiesto",
+      "details": "Dettagli del Progetto",
+      "submit": "Richiedi Preventivo"
+    },
+    "success": "La tua richiesta è stata inviata con successo. Ti contatteremo al più presto.",
+    "success": {
+      "title": "Richiesta Inviata con Successo!",
+      "message": "Grazie per aver richiesto un preventivo. Abbiamo ricevuto la tua richiesta e ti contatteremo al più presto per discutere i dettagli del tuo progetto.",
+      "back": "Torna alla Home"
+    }
+  },
+  "footer": {
+    "description": "Soluzioni avanzate di coating per anodi e catodi",
+    "quickLinks": "Link Rapidi",
+    "follow": "Seguici",
+    "copyright": "© 2025 Coating Tech. Tutti i diritti riservati."
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "Inglese",
+    "es": "Spagnolo"
+  }
+}
