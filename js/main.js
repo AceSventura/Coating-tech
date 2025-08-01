@@ -181,4 +181,10 @@ function applyTranslations(translations) {
   });
 }
 
-// Map is now implemented using an iframe in the HTML
+// Elements AOS initialization
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 800, // durata animazioni in ms
+    once: true     // anima solo una volta
+  });
+});

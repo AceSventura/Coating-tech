@@ -1,8 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Servizi",
-    "technologies": "Tecnologie",
+    "about": "Chi Siamo",
     "contact": "Contatti",
     "quote": "Richiedi preventivo",
     "products": "Prodotti"
@@ -16,7 +15,11 @@
     "technology": {
         "title": "Tecnologia",
         "description": "Rivestimenti progettati e realizzati utilizzando solo materie prime certificate, per garantire performance e affidabilità."
-    }
+    },
+    "paragraph1": "Coating-tech è una start-up specializzata nella produzione di elettrodi anodici e catodici rivestiti.",
+    "paragraph2": "Utilizziamo metodi innovativi e tecnologie avanzate per realizzare prodotti che garantiscono massima durata e resistenza.",
+    "paragraph3": "Offriamo soluzioni personalizzate in base alle specifiche esigenze dei nostri clienti. I nostri cicli di lavorazione sono all'avanguardia, studiati per assicurare rivestimenti performanti e di alta qualità.",
+    "paragraph4": "Grazie alla costante ricerca e aggiornamento tecnologico, puntiamo a rivoluzionare il settore con prodotti affidabili ed efficienti."
   },
   "hero": {
     "title": "Soluzioni Avanzate di Coating",

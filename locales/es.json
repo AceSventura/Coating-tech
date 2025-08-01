@@ -1,10 +1,9 @@
 {
   "nav": {
     "home": "Inicio",
-    "services": "Servicios",
-    "technologies": "Tecnologías",
+    "about": "Acerca de Nosotros",
     "contact": "Contactos",
-    "quote": "Presupuesto",
+    "quote": "Solicitar presupuesto",
     "products": "Productos"
   },
   "about": {
@@ -16,7 +15,11 @@
     "technology": {
         "title": "Tecnología",
         "description": "Revestimientos diseñados y fabricados utilizando solo materias primas certificadas, para garantizar rendimiento y fiabilidad."
-    }
+    },
+    "paragraph1": "Coating-tech es una empresa emergente especializada en la producción de electrodos anódicos y catódicos revestidos.",
+    "paragraph2": "Empleamos métodos innovadores y tecnologías avanzadas para fabricar productos que garanticen la máxima durabilidad y resistencia.",
+    "paragraph3": "Ofrecemos soluciones personalizadas en función de las necesidades específicas de nuestros clientes. Nuestros ciclos de procesamiento son de última generación, diseñados para garantizar revestimientos de alto rendimiento y alta calidad.",
+    "paragraph4": "Mediante la investigación y la actualización tecnológica constantes, pretendemos revolucionar el sector con productos fiables y eficaces."
   },  
   "hero": {
     "title": "Soluciones Avanzadas de Recubrimiento",

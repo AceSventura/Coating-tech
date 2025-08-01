@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coating Tech - Rivestimenti e Vernici per Anodi e Catodi</title>
+    <title>Coating Tech</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
                 <ul>
                     <li><a href="prodotti.html" data-i18n="nav.products">Prodotti</a></li>
                     <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
-                    <li><a href="#preventivo" data-i18n="nav.request_quote">Richiedi preventivo</a></li>
+                    <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
                 </ul>
             </nav>
             <div class="language-selector">
@@ -52,14 +53,14 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title" data-i18n="about.title">Chi siamo</h2>
+            <h2 id="about-title" class="section-title" data-i18n="about.title">Chi siamo</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-right">
                     <i class="fas fa-gem"></i>
                     <h3 data-i18n="about.experience.title">Esperienza</h3>
                     <p data-i18n="about.experience.description">Siamo un'azienda giovane, ma ci avvaliamo dell'esperienza pluridecennale di consulenti che operano da una vita nel settore.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-left">
                     <i class="fas fa-check-circle"></i>
                     <h3 data-i18n="about.technology.title">Tecnologia</h3>
                     <p data-i18n="about.technology.description">Rivestimenti progettati e realizzati utilizzando solo materie prime certificate, per garantire performance e affidabilità.</p>
@@ -71,14 +72,12 @@
         <div class="container">
             <div class="about-content">
                 <div class="lab-image">
-                    <img src="img/product1.jpg" alt="Coating product" class="lab-img">
+                    <img src="img/product1.jpg" loading="lazy" alt="Coating product" class="lab-img">
                 </div>
                 <div class="about-text">
                     <p data-i18n="about.paragraph1">Coating-tech è una start-up specializzata nella produzione di elettrodi anodici e catodici rivestiti.</p>
                     <p data-i18n="about.paragraph2">Utilizziamo metodi innovativi e tecnologie avanzate per realizzare prodotti che garantiscono massima durata e resistenza.</p>
-                    <p data-i18n="about.paragraph3">Offriamo soluzioni personalizzate in base alle specifiche esigenze dei nostri clienti.</p>
-                    <p data-i18n="about.paragraph4">I nostri cicli di lavorazione sono all'avanguardia, studiati per assicurare rivestimenti performanti e di alta qualità.</p>
-                    <p data-i18n="about.paragraph5">Grazie alla costante ricerca e aggiornamento tecnologico, puntiamo a rivoluzionare il settore con prodotti affidabili ed efficienti.</p>
+                    <p data-i18n="about.paragraph3">Offriamo soluzioni personalizzate in base alle specifiche esigenze dei nostri clienti. I nostri cicli di lavorazione sono all'avanguardia, studiati per assicurare rivestimenti performanti e di alta qualità.</p>
                 </div>
             </div>
             <div class="about-content reverse">
@@ -87,6 +86,7 @@
                 </div>
                 <div class="about-text">
                     <p data-i18n="about.paragraph6">Con uno sguardo sempre rivolto all'innovazione e alla ricerca, Coating tech Solutions si propone come partner affidabile per aziende industriali e professionisti che cercano prodotti di eccellenza e un supporto tecnico completo.</p>
+                    <p data-i18n="about.paragraph4">Grazie alla costante ricerca e aggiornamento tecnologico, puntiamo a rivoluzionare il settore con prodotti affidabili ed efficienti.</p>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <p>xxxxxxxx</p>
+                        <p>+39 123 456 7890</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -160,8 +160,7 @@
                     <h4 data-i18n="footer.quickLinks">Link Rapidi</h4>
                     <ul>
                         <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                        <li><a href="#about" data-i18n="nav.services">Servizi</a></li>
-                        <li><a href="#tecnologie" data-i18n="nav.technologies">Tecnologie</a></li>
+                        <li><a href="#about" data-i18n="nav.about">Chi siamo</a></li>
                         <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
                         <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
                     </ul>
@@ -181,7 +180,10 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+    
 </body>
 </html>

@@ -1,10 +1,9 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "technologies": "Technologies",
+    "about": "About Us",
     "contact": "Contacts",
-    "quote": "Quote",
+    "quote": "Request Quote",
     "products": "Products"
   },
   "about": {
@@ -16,7 +15,11 @@
     "technology": {
         "title": "Technology",
         "description": "Coatings designed and manufactured using only certified raw materials to ensure performance and reliability."
-    }
+    },
+    "paragraph1": "Coating-tech is an emerging company specialized in the production of anodic and cathodic coated electrodes.",
+    "paragraph2": "We use innovative methods and advanced technologies to manufacture products that guarantee maximum durability and strength.",
+    "paragraph3": "We offer customized solutions based on the specific needs of our customers. Our processing cycles are state-of-the-art, designed to guarantee high performance and high quality coatings.",
+    "paragraph4": "Through constant research and technological updating, we aim to revolutionize the industry with reliable and efficient products."
   },
   "hero": {
     "title": "Advanced Coating Solutions",
