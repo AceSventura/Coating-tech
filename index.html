@@ -19,27 +19,75 @@
                     <h1>Coating Tech</h1>
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="prodotti.html" data-i18n="nav.products">Prodotti</a></li>
-                    <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
-                    <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
-                </ul>
-            </nav>
-            <div class="language-selector">
-                <button class="language-btn">
-                    <i class="fas fa-globe"></i>
-                    <span data-i18n="language.it">Italiano</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="language-dropdown">
-                    <a href="#" data-lang="it">Italiano</a>
-                    <a href="#" data-lang="en">English</a>
-                    <a href="#" data-lang="es">Español</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <nav>
+                    <ul>
+                        <li><a href="prodotti.html" data-i18n="nav.products">Prodotti</a></li>
+                        <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span data-i18n="language.it">Italiano</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="it">Italiano</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="es">Español</a>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Mobile Menu Container -->
+            <div class="mobile-menu-container">
+                <button class="hamburger-btn" onclick="toggleMobileMenu()">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="prodotti.html" data-i18n="nav.products" onclick="closeMobileMenu()">Prodotti</a></li>
+                    <li><a href="#contatti" data-i18n="nav.contact" onclick="closeMobileMenu()">Contatti</a></li>
+                    <li><a href="#preventivo" data-i18n="nav.quote" onclick="closeMobileMenu()">Richiedi preventivo</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-language-selector">
+                <div class="mobile-language-title">
+                    <i class="fas fa-globe"></i> Lingua
+                </div>
+                <div class="mobile-language-options">
+                    <a href="#" data-lang="it" class="active">
+                        Italiano
+                    </a>
+                    <a href="#" data-lang="en">
+                        English
+                    </a>
+                    <a href="#" data-lang="es">
+                        Español
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="home" class="hero">
         <div class="container">

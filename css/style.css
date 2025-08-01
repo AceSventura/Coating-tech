@@ -129,15 +129,21 @@ header .container {
   color: var(--primary-color);
 }
 
-nav ul {
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav nav ul {
   display: flex;
 }
 
-nav ul li {
+.desktop-nav nav ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
+.desktop-nav nav ul li a {
   color: var(--text-color);
   font-weight: 500;
   padding: 5px 10px;
@@ -145,13 +151,13 @@ nav ul li a {
   transition: var(--transition);
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.desktop-nav nav ul li a:hover,
+.desktop-nav nav ul li a.active {
   color: var(--primary-color);
   background-color: rgba(0, 86, 179, 0.1);
 }
 
-/* Language Selector */
+/* Language Selector Desktop */
 .language-selector {
   position: relative;
   margin-left: 20px;
@@ -205,6 +211,191 @@ nav ul li a.active {
   background-color: rgba(0, 86, 179, 0.1);
 }
 
+/* Mobile Menu Styles */
+.mobile-menu-container {
+  display: none;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+  position: relative;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  background-color: rgba(0, 86, 179, 0.1);
+}
+
+.hamburger {
+  width: 28px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+/* Mobile Menu Dropdown */
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: var(--light-text);
+  box-shadow: var(--box-shadow);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-content {
+  padding: 20px;
+}
+
+.mobile-nav ul {
+  margin-bottom: 30px;
+}
+
+.mobile-nav ul li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 86, 179, 0.1);
+  padding-bottom: 15px;
+}
+
+.mobile-nav ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.mobile-nav ul li a:hover {
+  color: var(--primary-color);
+  padding-left: 10px;
+}
+
+/* Mobile Language Selector */
+.mobile-language-selector {
+  border-top: 2px solid rgba(0, 86, 179, 0.1);
+  padding-top: 20px;
+}
+
+.mobile-language-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.mobile-language-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.mobile-language-options a {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.mobile-language-options a:hover,
+.mobile-language-options a.active {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border-color: var(--primary-color);
+}
+
+.mobile-language-options a i {
+  margin-right: 5px;
+}
+
+/* Overlay per chiudere il menu */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../img/hero-img.jpg');
@@ -213,6 +404,24 @@ nav ul li a.active {
   color: var(--light-text);
   text-align: center;
   padding: 150px 0 100px;
+}
+
+.hero-content {
+  margin-top: 80px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* About Section */
@@ -227,7 +436,7 @@ nav ul li a.active {
   justify-content: center;
   margin-bottom: 60px;
   gap: 40px;
-  flex-direction: row; /* layout orizzontale di default */
+  flex-direction: row;
 }
 
 .about-content.reverse {
@@ -269,24 +478,6 @@ nav ul li a.active {
 
 .about-contact p {
   margin-bottom: 8px;
-}
-
-.hero-content {
-  margin-top: 80px;
-}
-
-.hero-content h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Services Section */
@@ -511,7 +702,7 @@ nav ul li a.active {
   display: block;
 }
 
-/* Footer */
+/* Lab Section */
 .lab-section {
   padding: 40px 0;
   background-color: #f9f9f9;
@@ -545,6 +736,7 @@ nav ul li a.active {
   object-position: center center;
 }
 
+/* Footer */
 footer {
   background-color: var(--dark-bg);
   color: var(--light-text);
@@ -629,27 +821,35 @@ footer {
   transform: rotate(-90deg);
   transform-origin: center;
   display: block;
-  max-width: 600px; /* o come necessario */
+  max-width: 600px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  /* NASCONDI MENU DESKTOP */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* MOSTRA HAMBURGER */
+  .mobile-menu-container {
+    display: block !important;
+  }
+
+  /* LAYOUT HEADER */
   header .container {
-    flex-direction: column;
-    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
   }
 
-  nav ul {
-    margin-top: 20px;
-    justify-content: center;
+  .logo {
+    flex: 1;
   }
 
-  nav ul li {
-    margin: 0 10px;
-  }
-
-  .language-selector {
-    margin: 20px 0 0;
+  .logo h1 {
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -673,7 +873,6 @@ footer {
     order: 1;
   }
 
-  /* About section styles - FIX PRINCIPALE */
   .about-content,
   .about-content.reverse {
     flex-direction: column;
@@ -693,7 +892,6 @@ footer {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    /* Elimina eventuali spaziature interne */
     overflow: hidden;
   }
 
@@ -703,10 +901,8 @@ footer {
     height: auto;
     border-radius: 8px;
     display: block;
-    /* FIX PRINCIPALE: Elimina lo spazio sotto l'immagine */
     vertical-align: top;
     line-height: 0;
-    /* Assicura che l'immagine riempia completamente il contenitore */
     object-fit: cover;
   }
 
@@ -723,7 +919,6 @@ footer {
     margin: 0;
   }
 
-  /* Lab images section per mobile */
   .lab-images {
     flex-direction: column;
     align-items: center;
@@ -745,7 +940,6 @@ footer {
     vertical-align: top;
   }
 
-  /* Gestione card e immagine per adattarsi alla card */
   .card-image {
     width: 100%;
     height: 200px;
@@ -763,5 +957,40 @@ footer {
     display: block;
     vertical-align: top;
     line-height: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu-content {
+    padding: 15px;
+  }
+
+  .mobile-nav ul li a {
+    font-size: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 20px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 8px;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 16px;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    top: 8px;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    top: 8px;
   }
 }
