@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Services",
     "technologies": "Technologies",
-    "contact": "Contact",
+    "contact": "Contacts",
     "quote": "Quote",
     "products": "Products"
   },
@@ -42,7 +42,7 @@
       "email": "Email",
       "phone": "Phone",
       "service": "Requested Service",
-      "details": "Project Details",
+      "details": "Quote Details",
       "submit": "Request Quote"
     },
     "success": "Your request has been successfully sent. We will contact you soon.",

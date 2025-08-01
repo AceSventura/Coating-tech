@@ -3,7 +3,7 @@
     "home": "Inicio",
     "services": "Servicios",
     "technologies": "Tecnologías",
-    "contact": "Contacto",
+    "contact": "Contactos",
     "quote": "Presupuesto",
     "products": "Productos"
   },
@@ -42,7 +42,7 @@
       "email": "Correo electrónico",
       "phone": "Teléfono",
       "service": "Servicio Solicitado",
-      "details": "Detalles del Proyecto",
+      "details": "Detalles del presupuesto",
       "submit": "Solicitar Presupuesto"
     },
     "success": "Su solicitud ha sido enviada con éxito. Nos pondremos en contacto con usted pronto.",

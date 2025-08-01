@@ -42,7 +42,7 @@
       "email": "Email",
       "phone": "Telefono",
       "service": "Servizio Richiesto",
-      "details": "Dettagli del Progetto",
+      "details": "Dettagli del preventivo",
       "submit": "Richiedi Preventivo"
     },
     "success": "La tua richiesta è stata inviata con successo. Ti contatteremo al più presto.",
