@@ -111,49 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Quote Form Submission
-  const quoteForm = document.getElementById('quoteForm');
-  const quoteSuccess = document.querySelector('.quote-success');
-  
-  if (quoteForm) {
-    quoteForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const formData = new FormData(quoteForm);
-      const formValues = {};
-      for (let [key, value] of formData.entries()) {
-        formValues[key] = value;
-      }
-      console.log('Quote Request:', formValues);
-
-      // Call external API
-      fetch('https://external-api.example.com/quote', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formValues)
-      })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('Success:', data);
-        window.location.href = 'quote-success.html';
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Si è verificato un errore durante l\'invio della richiesta. Riprova più tardi.');
-      });
-
-      // Reset the form
-      quoteForm.reset();
-    });
-  }
-  
   // Smooth scrolling for anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach(link => {
@@ -277,15 +234,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // EmailJS
-emailjs.init('A7RNHAcyUwn8cJ62l');
+emailjs.init({
+  publicKey: 'LA_TUA_CHIAVE_PUBBLICA'
+});
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Evita il reload della pagina
+// Gestione invio form
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("quoteForm");
+  
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      emailjs.sendForm('service_i55fpdj', 'template_3ckf9o8', this)
-        .then(function(response) {
-          alert('Email inviata con successo!');
-        }, function(error) {
-          alert('Errore: ' + error.text);
-        });
-    });
+    const messaggio =
+    {
+      from_name: document.getElementById("from_name").value,
+      reply_to: document.getElementById("reply_to").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+      time: new Date().toLocaleString(),
+    }
+
+    emailjs.send("ID_SERVICE", "ID_TEMPLATE", messaggio)
+      .then(function () {
+        alert("Email inviata con successo!");
+        form.reset();
+      }, function (error) {
+        alert("Errore nell'invio: " + error.text);
+      });
+  });
+});

@@ -1,72 +1,87 @@
-# Coating Tech - Sito Web Aziendale
+# Guida Rapida Configurazione EmailJS
 
-Questo repository contiene il codice sorgente per il sito web vetrina di Coating Tech, un'azienda specializzata in rivestimenti e vernici per anodi e catodi.
+Questa guida ti spiega come configurare EmailJS per permettere l'invio delle email dal sito in modo semplice e sicuro.
 
-## Caratteristiche
+---
 
-- Design responsive e moderno
-- Supporto multilingua (Italiano, Inglese, Spagnolo)
-- Sezioni informative sui servizi e le tecnologie
-- Modulo di contatto
-- Integrazione con Google Maps per visualizzare la posizione dell'azienda
-- Funzionalità per richiedere preventivi
+## 1. Creare un account EmailJS
 
-## Struttura del Progetto
+- Vai su [https://www.emailjs.com](https://www.emailjs.com)  
+- Registrati gratuitamente con la tua email e una password  
+- Verifica la tua email se richiesto  
 
+---
+
+## 2. Creare un Service Email
+
+- Accedi al tuo account EmailJS  
+- Dal dashboard clicca su **Add new service**  
+- Scegli il provider email (es. Gmail, Outlook, SMTP personalizzato)  
+- Completa la configurazione  
+- Prendi nota del **Service ID** (es. `service_xxx`)  
+
+---
+
+## 3. Creare un Template Email
+
+- Dal dashboard vai su **Email Templates**  
+- Crea un nuovo template con i seguenti campi:  
+
+  - `{{from_name}}`: nome e cognome dell'utente che richiede il preventivo  
+  - `{{reply_to}}`: email dell'utente  
+  - `{{message}}`: messaggio dell'utente  
+  - `{{time}}`: data e ora in cui viene inviato il preventivo  
+  - `{{phone}}`: numero di cellulare dell'utente  
+
+- Salva il template  
+- Prendi nota del **Template ID** (es. `template_xxx`)  
+
+---
+
+## 4. Ottenere la Public Key
+
+- Nel dashboard vai su **Account Settings** > **API Keys**  
+- Copia la tua **Public Key**  
+
+---
+
+## 5. Configurare il file `main.js`
+
+Nel file `main.js` del sito, inserisci la Public Key e modifica il codice per inviare l'email utilizzando il Service ID e il Template ID ottenuti.
+
+```js
+emailjs.init({
+  publicKey: 'LA_TUA_CHIAVE_PUBBLICA'
+});
 ```
-/
-├── css/
-│   └── style.css          # Foglio di stile principale
-├── img/
-│   ├── hero-bg.svg        # Immagine di sfondo per la sezione hero
-│   └── tech-image.svg     # Immagine illustrativa per la sezione tecnologie
-├── js/
-│   └── main.js            # Script JavaScript principale
-├── locales/
-│   ├── it.json            # Traduzioni in italiano
-│   ├── en.json            # Traduzioni in inglese
-│   └── es.json            # Traduzioni in spagnolo
-├── index.html             # Pagina principale
-├── quote-success.html     # Pagina di conferma per il modulo preventivo
-└── README.md              # Documentazione del progetto
+
+```js
+emailjs.send("ID_SERVICE", "ID_TEMPLATE", messaggio)
+  .then(function () {
+    alert("Email inviata con successo!");
+    form.reset();
+  }, function (error) {
+    alert("Errore nell'invio: " + error.text);
+  });
 ```
 
-## Installazione
+---
 
-1. Clona questo repository:
-   ```bash
-   git clone https://github.com/tuousername/coating-tech.git
-   cd coating-tech
-   ```
+## 6. Limitare l’uso della Public Key al dominio del sito
 
-2. Apri il file `index.html` nel tuo browser per visualizzare il sito localmente.
+Per evitare usi non autorizzati:
 
-## Personalizzazione
+- Vai su **Account Settings** > **Security** > **Domain Whitelist**  
+- Inserisci il dominio del tuo sito (es. `tuodominio.it`)  
+- Salva le modifiche  
 
-### Mappa Google Maps
+In questo modo la chiave funzionerà solo se usata dal tuo dominio.
 
-Il sito utilizza un iframe incorporato di Google Maps per visualizzare la posizione dell'azienda. Non è necessaria alcuna configurazione aggiuntiva per la mappa.
+---
 
-### Traduzioni
+## 7. Pubblicazione
 
-Per modificare o aggiungere traduzioni, modifica i file JSON nella cartella `locales/`.
+- Carica i file sul tuo hosting (es. Aruba, Netlify, ecc.)  
+- Verifica il funzionamento del form inviando una mail di prova  
 
-### Stili
-
-Per personalizzare l'aspetto del sito, modifica il file `css/style.css`.
-
-## Funzionalità Multilingua
-
-Il sito supporta tre lingue: italiano (predefinito), inglese e spagnolo. La lingua viene salvata nelle preferenze locali dell'utente tramite localStorage.
-
-## Modulo di Contatto e Preventivo
-
-I moduli di contatto e preventivo sono configurati per funzionare senza backend. In un ambiente di produzione, sarà necessario implementare la logica di backend per elaborare i dati dei moduli e inviare email.
-
-## Licenza
-
-Questo progetto è rilasciato sotto licenza MIT. Vedi il file LICENSE per maggiori dettagli.
-
-## Contatti
-
-Per domande o supporto, contattare info@coatingtech.it.
+---
