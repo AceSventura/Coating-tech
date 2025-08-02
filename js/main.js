@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // EmailJS
-emailjs.init('TUO_USER_ID');
+emailjs.init('A7RNHAcyUwn8cJ62l');
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); // Evita il reload della pagina
