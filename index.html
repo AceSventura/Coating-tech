@@ -175,19 +175,19 @@
                 <p class="quote-intro" data-i18n="quote.intro">Compila il modulo sottostante per ricevere un preventivo personalizzato per i nostri servizi di coating.</p>
                 <form id="quoteForm" class="quote-form">
                     <div class="form-group">
-                        <input type="text" id="quoteName" name="name" placeholder="Nome e Cognome" data-i18n="quote.form.name" required>
+                        <input type="text" id="_" name="from_name" placeholder="Nome e Cognome" data-i18n="quote.form.name" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="email" id="quoteEmail" name="email" placeholder="Email" data-i18n="quote.form.email" required>
+                            <input type="email" id="reply_to" name="reply_to" placeholder="Email" data-i18n="quote.form.email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="quotePhone" name="phone" placeholder="Telefono" data-i18n="quote.form.phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono" data-i18n="quote.form.phone">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <textarea id="quoteDetails" name="details" placeholder="Dettagli del Progetto" data-i18n="quote.form.details" required></textarea>
+                        <textarea id="message" name="details" placeholder="Dettagli del Progetto" data-i18n="quote.form.details" required></textarea>
                     </div>
                     <button type="submit" class="btn" data-i18n="quote.form.submit">Richiedi Preventivo</button>
                     <div class="quote-success" data-i18n="quote.success">La tua richiesta è stata inviata con successo. Ti contatteremo al più presto.</div>
@@ -228,6 +228,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>

@@ -275,3 +275,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// EmailJS
+emailjs.init('TUO_USER_ID');
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita il reload della pagina
+
+      emailjs.sendForm('service_i55fpdj', 'template_3ckf9o8', this)
+        .then(function(response) {
+          alert('Email inviata con successo!');
+        }, function(error) {
+          alert('Errore: ' + error.text);
+        });
+    });
