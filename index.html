@@ -30,9 +30,9 @@
             <div class="desktop-nav">
                 <nav>
                     <ul>
-                        <li><a href="prodotti.html" data-i18n="nav.products">Prodotti</a></li>
-                        <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
-                        <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
                     </ul>
                 </nav>
                 <div class="language-selector">
@@ -71,8 +71,8 @@
             <nav class="mobile-nav">
                 <ul>
                     <li><a href="prodotti.html" data-i18n="nav.products" onclick="closeMobileMenu()">Prodotti</a></li>
-                    <li><a href="#contatti" data-i18n="nav.contact" onclick="closeMobileMenu()">Contatti</a></li>
-                    <li><a href="#preventivo" data-i18n="nav.quote" onclick="closeMobileMenu()">Richiedi preventivo</a></li>
+                    <li><a href="#contacts" data-i18n="nav.contact" onclick="closeMobileMenu()">Contatti</a></li>
+                    <li><a href="#quote" data-i18n="nav.quote" onclick="closeMobileMenu()">Richiedi preventivo</a></li>
                 </ul>
             </nav>
             
@@ -100,7 +100,7 @@
             <div class="hero-content">
                 <h2 data-i18n="hero.title">Soluzioni Avanzate di Coating</h2>
                 <p data-i18n="hero.subtitle">Specialisti nella produzione di elettrodi anodici e catodici rivestiti</p>
-                <a href="#contatti" class="btn" data-i18n="hero.cta">Contattaci</a>
+                <a href="#contacts" class="btn" data-i18n="hero.cta">Contattaci</a>
             </div>
         </div>
     </section>
@@ -108,7 +108,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2 id="about-title" class="section-title" data-i18n="about.title">Chi siamo</h2>
-            <div class="services-grid">
+            <div class="about-content">
                 <div class="service-card" data-aos="fade-right">
                     <i class="fas fa-gem"></i>
                     <h3 data-i18n="about.experience.title">Esperienza</h3>
@@ -121,12 +121,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="products" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="lab-image">
-                    <img src="img/product1.jpg" loading="lazy" alt="Coating product" class="lab-img">
+                    <img src="img/product1.jpg" loading="lazy" data-i18n-alt="images_alt.products" class="lab-img">
                 </div>
                 <div class="about-text">
                     <p data-i18n="about.paragraph1">Coating-tech è una start-up specializzata nella produzione di elettrodi anodici e catodici rivestiti.</p>
@@ -135,7 +133,7 @@
             </div>
             <div class="about-content reverse">
                 <div class="lab-image">
-                    <img src="img/lab.jpg" alt="Laboratory" class="lab-img">
+                    <img src="img/lab.jpg" loading="lazy" data-i18n-alt="images_alt.lab" class="lab-img">
                 </div>
                 <div class="about-text">
                     <p data-i18n="about.paragraph3">Offriamo soluzioni personalizzate in base alle specifiche esigenze dei nostri clienti. I nostri cicli di lavorazione sono all'avanguardia, studiati per assicurare rivestimenti performanti e di alta qualità.</p>
@@ -145,7 +143,7 @@
         </div>
     </section>
 
-    <section id="contatti" class="contact">
+    <section id="contacts" class="contact">
         <div class="container contact-flex">
             <h2 class="section-title" data-i18n="contact.title">Contattaci</h2>
             <div class="contact-content">
@@ -174,7 +172,7 @@
         </div>
     </section>
 
-    <section id="preventivo" class="quote">
+    <section id="quote" class="quote">
         <div class="container">
             <h2 class="section-title" data-i18n="quote.title">Richiedi un Preventivo</h2>
             <div class="quote-content">
@@ -214,8 +212,8 @@
                     <ul>
                         <li><a href="#home" data-i18n="nav.home">Home</a></li>
                         <li><a href="#about" data-i18n="nav.about">Chi siamo</a></li>
-                        <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
-                        <li><a href="#preventivo" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                        <li><a href="#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">

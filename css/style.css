@@ -92,7 +92,7 @@ img {
 }
 
 section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 /* Header Styles */
@@ -407,7 +407,7 @@ header .container {
 }
 
 .hero-content {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .hero-content h2 {
@@ -428,13 +428,14 @@ header .container {
 .about {
   background-color: var(--light-bg);
   padding: 80px 0;
+  margin-bottom: 20px;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   gap: 40px;
   flex-direction: row;
 }
@@ -513,52 +514,10 @@ header .container {
   color: var(--primary-color);
 }
 
-/* Technologies Section */
-.technologies {
-  background-color: var(--light-text);
-}
-
-.tech-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.tech-text {
-  flex: 1;
-}
-
-.tech-text p {
-  margin-bottom: 20px;
-}
-
-.tech-text ul {
-  margin-bottom: 20px;
-  padding-left: 20px;
-}
-
-.tech-text ul li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 25px;
-}
-
-.tech-text ul li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.tech-image {
-  flex: 1;
-  text-align: center;
-}
-
 /* Contact Section */
 .contact {
   background-color: var(--light-bg);
+  margin-top: 20px;
 }
 
 .contact-content {
@@ -602,41 +561,6 @@ header .container {
   border: 0;
 }
 
-/* Technologies Section */
-.technologies {
-  background-color: var(--light-bg);
-}
-
-.technologies-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.tech-card {
-  background-color: var(--light-text);
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  text-align: center;
-}
-
-.tech-card:hover {
-  transform: translateY(-10px);
-}
-
-.tech-icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.tech-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
 
 /* Quote Section */
 .quote {

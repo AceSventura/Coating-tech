@@ -55,6 +55,11 @@
       "back": "Back to Home"
     }
   },
+  "images_alt": {
+    "lab": "Coating Tech Laboratory with anodic electrodes",
+    "hero": "Anodic electrodes with coating",
+    "products": "Coating products"
+  },
   "footer": {
     "description": "Advanced coating solutions for anodes and cathodes",
     "quickLinks": "Quick Links",

@@ -55,6 +55,11 @@
       "back": "Torna alla Home"
     }
   },
+  "images_alt": {
+    "lab": "Laboratorio di Coating Tech con elettrodi anodici",
+    "hero": "Elettrodi anodici rivestiti",
+    "products": "Prodotti di coating"
+  },
   "footer": {
     "description": "Soluzioni avanzate di coating per anodi e catodi",
     "quickLinks": "Link Rapidi",

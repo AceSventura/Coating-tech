@@ -55,6 +55,11 @@
       "back": "Volver al Inicio"
     }
   },
+  "images_alt": {
+    "lab": "Laboratorio de Coating Tech con electrodos anódicos",
+    "hero": "Electrodos anódicos revestidos",
+    "products": "Productos de recubrimiento"
+  },
   "footer": {
     "description": "Soluciones avanzadas de recubrimiento para ánodos y cátodos",
     "quickLinks": "Enlaces Rápidos",
