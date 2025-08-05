@@ -71,9 +71,11 @@
     "es": "Spagnolo"
   },
   "products": {
+    "hero": "I Nostri Prodotti",
+    "subtitle": "Soluzioni avanzate per l'elettrolisi industriale",
     "title": "Elettrodi per elettrolisi: rivestimenti elettrocatalitici",
     "description": "L'operazione prevede l'applicazione di rivestimenti a base di metalli nobili come l'iridio e il rutenio su elettrodi di titanio o nichel utilizzando tecniche a pennello o a spruzzo. Le parti vengono quindi cotte in forni ad alta temperatura per garantire un'adesione ottimale. Segue un ciclo di lavorazione specifico per ogni tipo di elettrodo: la preparazione del metallo, il numero di strati, i tempi di essiccazione e le curve di cottura vengono adattati in base all'applicazione finale.",
-    "caption2": "Elettrodi in nichel e titanio",
-    "caption1": "Sonde in titanio in varie dimensioni e caratteristiche trattati"
+    "caption1": "Sonde in titanio in varie dimensioni e caratteristiche trattati",
+    "caption2": "Elettrodi in nichel e titanio"
   }
 }

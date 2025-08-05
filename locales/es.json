@@ -72,9 +72,11 @@
     "es": "Español"
   },
   "products": {
+    "hero": "Nuestros Productos",
+    "subtitle": "Soluciones avanzadas para la electrólisis industrial",
     "title": "Electrodos de electrólisis: revestimientos electrocatalíticos",
     "description": "La operación consiste en aplicar revestimientos basados en metales nobles como el iridio y el rutenio a electrodos de titanio o níquel mediante técnicas de cepillado o pulverización. A continuación, las piezas se cuecen en hornos de alta temperatura para garantizar una adherencia óptima. Para cada tipo de electrodo se sigue un ciclo de mecanizado específico: la preparación del metal, el número de capas, los tiempos de secado y las curvas de cocción se adaptan a la aplicación final",
-    "caption1": "Electrodos de níquel y titanio",
-    "caption2": "Sondas de titanio en varias dimensiones y características tratadas"
+    "caption2": "Electrodos de níquel y titanio",
+    "caption1": "Sondas de titanio en varias dimensiones y características tratadas"
   }
 }

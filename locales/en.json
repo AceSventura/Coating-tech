@@ -72,9 +72,11 @@
     "es": "Spanish"
   },
   "products": {
+    "hero": "Our Products",
+    "subtitle": "Advanced solutions for industrial electrolysis",
     "title": "Electrolysis electrodes: electrocatalytic coatings",
     "description": "The operation involves applying coatings based on noble metals such as iridium and ruthenium to titanium or nickel electrodes using brush or spray techniques. The parts are then fired in high-temperature furnaces to ensure optimal adhesion. A specific machining cycle follows for each type of electrode: metal preparation, number of layers, drying times, and firing curves are adapted to suit the final application.",
-    "caption1": "Nickel and titanium electrodes",
-    "caption2": "Titanium probes in various sizes and treated characteristics"
+    "caption2": "Nickel and titanium electrodes",
+    "caption1": "Titanium probes in various sizes and treated characteristics"
   }
 }
