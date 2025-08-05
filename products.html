@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti - Coating Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Stile specifico per la pagina prodotti */
+        .products-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('img/products-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light-text);
+            text-align: center;
+            padding: 150px 0 100px;
+            position: relative;
+        }
+        
+        .products-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/products-hero.jpg') center / cover no-repeat;
+            transform: rotate(180deg);
+            filter: grayscale(100%);
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        .products-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .products-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Sezione prodotti principale */
+        .products-main {
+            background-color: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .products-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .products-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .products-description {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+        
+        .products-description p {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Layout griglia prodotti */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+            align-items: start;
+        }
+        
+        .product-section {
+            background: var(--light-text);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            max-height: 700px;
+            flex: 1;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .product-content {
+            padding: 20px 30px 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .product-content h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .product-content p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive per mobile */
+        @media screen and (max-width: 768px) {
+            .products-hero {
+                padding: 180px 0 80px;
+            }
+            
+            .products-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .products-title {
+                font-size: 2rem;
+            }
+            
+            .products-description {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+            
+            .product-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Coating Tech</h1>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products" data-i18n="nav.products">Prodotti</a></li>
+                        <li><a href="index.html#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="index.html#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span data-i18n="language.it">Italiano</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="it">Italiano</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="es">Español</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Container -->
+            <div class="mobile-menu-container">
+                <button class="hamburger-btn" onclick="toggleMobileMenu()">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                    <li><a href="#products" data-i18n="nav.products" onclick="closeMobileMenu()">Prodotti</a></li>
+                    <li><a href="index.html#contacts" data-i18n="nav.contact" onclick="closeMobileMenu()">Contatti</a></li>
+                    <li><a href="index.html#quote" data-i18n="nav.quote" onclick="closeMobileMenu()">Richiedi preventivo</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-language-selector">
+                <div class="mobile-language-title">
+                    <i class="fas fa-globe"></i> Lingua
+                </div>
+                <div class="mobile-language-options">
+                    <a href="#" data-lang="it" class="active">
+                        Italiano
+                    </a>
+                    <a href="#" data-lang="en">
+                        English
+                    </a>
+                    <a href="#" data-lang="es">
+                        Español
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>I Nostri Prodotti</h1>
+                <p>Soluzioni avanzate per l'elettrolisi industriale</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Main Section -->
+    <section id="products" class="products-main">
+        <div class="container">
+            <h2 data-i18n="products.title" class="products-title">Elettrodi per elettrolisi: rivestimenti elettrocatalitici</h2>
+            
+            <div class="products-description">
+                <p data-i18n="products.description">L'operazione prevede l'applicazione di rivestimenti a base di metalli nobili come l'iridio e il rutenio su elettrodi di titanio o nichel utilizzando tecniche a pennello o a spruzzo. Le parti vengono quindi cotte in forni ad alta temperatura per garantire un'adesione ottimale. Segue un ciclo di lavorazione specifico per ogni tipo di elettrodo: la preparazione del metallo, il numero di strati, i tempi di essiccazione e le curve di cottura vengono adattati in base all'applicazione finale.</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Sonde in titanio -->
+                <div class="product-section" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="img/product2.jpg" alt="Sonde in titanio in varie dimensioni e caratteristiche trattati" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 data-i18n="products.caption2">Sonde in titanio in varie dimensioni e caratteristiche trattati</h3>
+                    </div>
+                </div>
+
+                <!-- Elettrodi in nichel e titanio -->
+                <div class="product-section" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="img/product3.jpg" alt="Elettrodi in nichel e titanio" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 data-i18n="products.caption1">Elettrodi in nichel e titanio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Coating Tech</h3>
+                    <p data-i18n="footer.description">Soluzioni avanzate di coating per anodi e catodi</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#products" data-i18n="nav.products">Prodotti</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">Chi siamo</a></li>
+                        <li><a href="index.html#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="index.html#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-i18n="footer.follow">Seguici</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Coating Tech. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

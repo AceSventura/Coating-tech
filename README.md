@@ -34,7 +34,7 @@ Questa guida ti spiega come configurare EmailJS per permettere l'invio delle ema
   - `{{phone}}`: numero di cellulare dell'utente  
 
 - Salva il template  
-- Prendi nota del **Template ID** (es. `template_xxx`)  
+- Prendi nota del **Template ID** (es. `template_xxx`), puoi usare il seguente "template_3ckf9o8s"
 
 ---
 
@@ -47,11 +47,11 @@ Questa guida ti spiega come configurare EmailJS per permettere l'invio delle ema
 
 ## 5. Configurare il file `main.js`
 
-Nel file `main.js` del sito, inserisci la Public Key e modifica il codice per inviare l'email utilizzando il Service ID e il Template ID ottenuti.
+Nel file `main.js` del sito, inserisci la Public Key del tuo user e modifica il codice per inviare l'email utilizzando il Service ID e il Template ID ottenuti.
 
 ```js
 emailjs.init({
-  publicKey: 'LA_TUA_CHIAVE_PUBBLICA'
+  publicKey: 'PUBLIC_KEY__USER'
 });
 ```
 
@@ -67,7 +67,7 @@ emailjs.send("ID_SERVICE", "ID_TEMPLATE", messaggio)
 
 ---
 
-## 6. Limitare l’uso della Public Key al dominio del sito
+## 6. Limitare l'uso della Public Key al dominio del sito
 
 Per evitare usi non autorizzati:
 

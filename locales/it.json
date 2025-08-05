@@ -10,14 +10,13 @@
     "title": "Chi Siamo",
     "experience": {
         "title": "Esperienza",
-        "description": "Siamo un'azienda giovane, ma ci avvaliamo dell'esperienza pluridecennale di consulenti che operano da una vita nel settore."
+        "description": "Elettrodi realizzati con metodi sviluppati da professionisti con oltre dieci anni di esperienza nel settore."
     },
     "technology": {
         "title": "Tecnologia",
-        "description": "Rivestimenti progettati e realizzati utilizzando solo materie prime certificate, per garantire performance e affidabilità."
+        "description": "I nostri rivestimenti per elettrodi sono realizzati su misura in base alle esigenze del cliente."
     },
-    "paragraph1": "Coating-tech è una start-up specializzata nella produzione di elettrodi anodici e catodici rivestiti.",
-    "paragraph2": "Utilizziamo metodi innovativi e tecnologie avanzate per realizzare prodotti che garantiscono massima durata e resistenza.",
+    "paragraph1": "Coating Tech è una start-up fondata con l'obiettivo di portare innovazione e qualità nel settore, offrendo soluzioni che combinano prestazioni elevate e massima affidabilità. Siamo specializzati nello sviluppo di rivestimenti avanzati per elettrodi anodici e catodici realizzati con metodi perfezionati da professionisti con anni di esperienza nel settore.",
     "paragraph3": "Offriamo soluzioni personalizzate in base alle specifiche esigenze dei nostri clienti. I nostri cicli di lavorazione sono all'avanguardia, studiati per assicurare rivestimenti performanti e di alta qualità.",
     "paragraph4": "Grazie alla costante ricerca e aggiornamento tecnologico, puntiamo a rivoluzionare il settore con prodotti affidabili ed efficienti."
   },
@@ -70,5 +69,11 @@
     "it": "Italiano",
     "en": "Inglese",
     "es": "Spagnolo"
+  },
+  "products": {
+    "title": "Elettrodi per elettrolisi: rivestimenti elettrocatalitici",
+    "description": "L'operazione prevede l'applicazione di rivestimenti a base di metalli nobili come l'iridio e il rutenio su elettrodi di titanio o nichel utilizzando tecniche a pennello o a spruzzo. Le parti vengono quindi cotte in forni ad alta temperatura per garantire un'adesione ottimale. Segue un ciclo di lavorazione specifico per ogni tipo di elettrodo: la preparazione del metallo, il numero di strati, i tempi di essiccazione e le curve di cottura vengono adattati in base all'applicazione finale.",
+    "caption2": "Elettrodi in nichel e titanio",
+    "caption1": "Sonde in titanio in varie dimensioni e caratteristiche trattati"
   }
 }

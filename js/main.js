@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // EmailJS
 emailjs.init({
-  publicKey: 'LA_TUA_CHIAVE_PUBBLICA'
+  publicKey: 'PUBLIC_KEY__USER'
 });
 
 // Gestione invio form
@@ -256,10 +256,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     emailjs.send("ID_SERVICE", "ID_TEMPLATE", messaggio)
       .then(function () {
-        alert("Email inviata con successo!");
+        window.location.href = 'quote-success.html';
         form.reset();
       }, function (error) {
-        alert("Errore nell'invio: " + error.text);
+        alert("Errore nell'invio. ");
       });
   });
 });

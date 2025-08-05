@@ -8,16 +8,16 @@
   },
   "about": {
     "title": "About Us",
+    "description": "Coating tech is a start-up company established with the aim of bringing innovation and quality to the industry, offering solutions that combine high performance and maximum reliability. We specialize in developing advanced coatings for anode and cathode electrodes made through methods perfected by professionals with years of experience in the industry.",
     "experience": {
         "title": "Experience",
-        "description": "We are a young company, but we rely on the decades-long experience of consultants who have worked in the industry their entire lives."
+        "description": "Electrodes manufactured using methods developed by professionals with over ten years of experience in the field."
     },
     "technology": {
         "title": "Technology",
-        "description": "Coatings designed and manufactured using only certified raw materials to ensure performance and reliability."
+        "description": " Our electrode coatings are custom-made according to the customer's requirements."
     },
-    "paragraph1": "Coating-tech is an emerging company specialized in the production of anodic and cathodic coated electrodes.",
-    "paragraph2": "We use innovative methods and advanced technologies to manufacture products that guarantee maximum durability and strength.",
+    "paragraph1": "Coating tech is a start-up company established with the aim of bringing innovation and quality to the industry, offering solutions that combine high performance and maximum reliability. We specialize in developing advanced coatings for anode and cathode electrodes made through methods perfected by professionals with years of experience in the industry.",
     "paragraph3": "We offer customized solutions based on the specific needs of our customers. Our processing cycles are state-of-the-art, designed to guarantee high performance and high quality coatings.",
     "paragraph4": "Through constant research and technological updating, we aim to revolutionize the industry with reliable and efficient products."
   },
@@ -70,5 +70,11 @@
     "it": "Italian",
     "en": "English",
     "es": "Spanish"
+  },
+  "products": {
+    "title": "Electrolysis electrodes: electrocatalytic coatings",
+    "description": "The operation involves applying coatings based on noble metals such as iridium and ruthenium to titanium or nickel electrodes using brush or spray techniques. The parts are then fired in high-temperature furnaces to ensure optimal adhesion. A specific machining cycle follows for each type of electrode: metal preparation, number of layers, drying times, and firing curves are adapted to suit the final application.",
+    "caption1": "Nickel and titanium electrodes",
+    "caption2": "Titanium probes in various sizes and treated characteristics"
   }
 }

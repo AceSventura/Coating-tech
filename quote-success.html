@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         .success-page {
@@ -47,31 +48,47 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Coating Tech</h1>
+                <a href="#home">
+                    <h1>Coating Tech</h1>
+                </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
-                    <li><a href="index.html#servizi" data-i18n="nav.services">Servizi</a></li>
-                    <li><a href="index.html#tecnologie" data-i18n="nav.technologies">Tecnologie</a></li>
-                    <li><a href="index.html#contatti" data-i18n="nav.contact">Contatti</a></li>
-                    <li><a href="index.html#preventivo" data-i18n="nav.quote">Preventivo</a></li>
-                </ul>
-            </nav>
-            <div class="language-selector">
-                <button class="language-btn">
-                    <span data-i18n="language.it">Italiano</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="language-dropdown">
-                    <a href="#" data-lang="it">Italiano</a>
-                    <a href="#" data-lang="en">English</a>
-                    <a href="#" data-lang="es">Español</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="index.html#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
+                        <li><a href="#products" data-i18n="nav.products">Prodotti</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span data-i18n="language.it">Italiano</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="it">Italiano</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="es">Español</a>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Mobile Menu Container -->
+            <div class="mobile-menu-container">
+                <button class="hamburger-btn" onclick="toggleMobileMenu()">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
             </div>
         </div>
     </header>
-
     <section class="success-page">
         <div class="container">
             <div class="success-icon">
@@ -93,11 +110,10 @@
                 <div class="footer-links">
                     <h4 data-i18n="footer.quickLinks">Link Rapidi</h4>
                     <ul>
-                        <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
-                        <li><a href="index.html#servizi" data-i18n="nav.services">Servizi</a></li>
-                        <li><a href="index.html#tecnologie" data-i18n="nav.technologies">Tecnologie</a></li>
-                        <li><a href="index.html#contatti" data-i18n="nav.contact">Contatti</a></li>
-                        <li><a href="index.html#preventivo" data-i18n="nav.quote">Preventivo</a></li>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav.about">Chi siamo</a></li>
+                        <li><a href="#contacts" data-i18n="nav.contact">Contatti</a></li>
+                        <li><a href="#quote" data-i18n="nav.quote">Richiedi preventivo</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -110,7 +126,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">&copy; 2023 Coating Tech. Tutti i diritti riservati.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 Coating Tech. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>

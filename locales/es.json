@@ -8,16 +8,16 @@
   },
   "about": {
     "title": "Acerca de Nosotros",
+    "description": "Coating tech es una empresa de nueva creación fundada con el objetivo de aportar innovación y calidad a la industria ofreciendo soluciones que combinan alto rendimiento y máxima fiabilidad. Estamos especializados en el desarrollo de revestimientos avanzados para electrodos anódicos y catódicos, fabricados mediante métodos perfeccionados por profesionales con años de experiencia en el sector.",
     "experience": {
         "title": "Experiencia",
-        "description": "Somos una empresa joven, pero contamos con la experiencia de décadas de consultores que han trabajado toda su vida en el sector."
+        "description": "Electrodos fabricados con métodos desarrollados por profesionales con más de diez años de experiencia en el sector."
     },
     "technology": {
         "title": "Tecnología",
-        "description": "Revestimientos diseñados y fabricados utilizando solo materias primas certificadas, para garantizar rendimiento y fiabilidad."
+        "description": "Nuestros recubrimientos para electrodos se fabrican a medida según las necesidades del cliente."
     },
-    "paragraph1": "Coating-tech es una empresa emergente especializada en la producción de electrodos anódicos y catódicos revestidos.",
-    "paragraph2": "Empleamos métodos innovadores y tecnologías avanzadas para fabricar productos que garanticen la máxima durabilidad y resistencia.",
+    "paragraph1": "Coating tech es una empresa de nueva creación fundada con el objetivo de aportar innovación y calidad a la industria ofreciendo soluciones que combinan alto rendimiento y máxima fiabilidad. Estamos especializados en el desarrollo de revestimientos avanzados para electrodos anódicos y catódicos, fabricados mediante métodos perfeccionados por profesionales con años de experiencia en el sector.",
     "paragraph3": "Ofrecemos soluciones personalizadas en función de las necesidades específicas de nuestros clientes. Nuestros ciclos de procesamiento son de última generación, diseñados para garantizar revestimientos de alto rendimiento y alta calidad.",
     "paragraph4": "Mediante la investigación y la actualización tecnológica constantes, pretendemos revolucionar el sector con productos fiables y eficaces."
   },  
@@ -70,5 +70,11 @@
     "it": "Italiano",
     "en": "Inglés",
     "es": "Español"
+  },
+  "products": {
+    "title": "Electrodos de electrólisis: revestimientos electrocatalíticos",
+    "description": "La operación consiste en aplicar revestimientos basados en metales nobles como el iridio y el rutenio a electrodos de titanio o níquel mediante técnicas de cepillado o pulverización. A continuación, las piezas se cuecen en hornos de alta temperatura para garantizar una adherencia óptima. Para cada tipo de electrodo se sigue un ciclo de mecanizado específico: la preparación del metal, el número de capas, los tiempos de secado y las curvas de cocción se adaptan a la aplicación final",
+    "caption1": "Electrodos de níquel y titanio",
+    "caption2": "Sondas de titanio en varias dimensiones y características tratadas"
   }
 }
