@@ -308,13 +308,13 @@ header .container {
 }
 
 .mobile-nav ul {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .mobile-nav ul li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-bottom: 1px solid rgba(0, 86, 179, 0.1);
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .mobile-nav ul li:last-child {

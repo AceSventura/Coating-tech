@@ -1,6 +1,6 @@
 # Guida Rapida Configurazione EmailJS
 
-Questa guida ti spiega come configurare EmailJS per permettere l'invio delle email dal sito in modo semplice e sicuro.
+Questa guida ti spiega come configurare EmailJS per permettere l'invio delle email dal sito utilizzando il fornitore EmailJS
 
 ---
 
@@ -23,10 +23,9 @@ Questa guida ti spiega come configurare EmailJS per permettere l'invio delle ema
 ---
 
 ## 3. Creare un Template Email
-
+### Se vuoi avere un template personalizzato
 - Dal dashboard vai su **Email Templates**  
 - Crea un nuovo template con i seguenti campi:  
-
   - `{{from_name}}`: nome e cognome dell'utente che richiede il preventivo  
   - `{{reply_to}}`: email dell'utente  
   - `{{message}}`: messaggio dell'utente  
@@ -34,7 +33,8 @@ Questa guida ti spiega come configurare EmailJS per permettere l'invio delle ema
   - `{{phone}}`: numero di cellulare dell'utente  
 
 - Salva il template  
-- Prendi nota del **Template ID** (es. `template_xxx`), puoi usare il seguente "template_3ckf9o8s"
+- Prendi nota del **Template ID** (es. `template_xxx`).
+### Altrimenti puoi usare il seguente "template_3ckf9o8s"
 
 ---
 
@@ -81,7 +81,7 @@ In questo modo la chiave funzionerà solo se usata dal tuo dominio.
 
 ## 7. Pubblicazione
 
-- Carica i file sul tuo hosting (es. Aruba, Netlify, ecc.)  
-- Verifica il funzionamento del form inviando una mail di prova  
+- Carica i file sul tuo hosting (es. Aruba, Netlify, ecc.) (consiglio Netfliy per la facilità di configurazione) 
+- Verifica il funzionamento del form inviando una mail di prova 
 
 ---
